@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:fb="http://www.facebook.com/2008/fbml">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="img/marfru.png" />
+    <meta property="og:site_name" content="Marfru"/>
+    <meta property="og:description" content="Potfolio of Marcos Frutos - Front End Developer & UI Designer"/>
+    <meta property="og:url" content="http://marfru.com/">
+    <meta property="og:type" content="Portfolio"/>
+
+    <title>Marcos Frutos | Front End Developer & UI Designer</title>ok
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/marfru.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $('h1').addClass('animated bounceInLeft');
+  $('h2').addClass('animated bounceInLeft');
+  $('.logo').addClass('animated bounceInDown');
+  $('.arrow').addClass('animated bounce');
+  $('.arrow_g').addClass('animated swing');
+  $('.arrow_w').addClass('animated shake');
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".arrow").click(function(){
+    $('.mephoto').addClass('animated bounceInDown');
+    $('.myname').addClass('animated bounceInLeft');
+    $('.infome').addClass('animated bounceInLeft');
+    $('.paragraph_ab').addClass('animated bounceInRight');
+    $('.resume').addClass('animated bounceInUp');
+   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".arrow_g").click(function(){
+    $('.size1').addClass('animated bounceInLeft');
+    $('.size2').addClass('animated bounceInRight');
+    $('.nav_w').addClass('animated bounceInRight');
+   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".arrow_w").click(function(){
+    $('form').addClass('animated bounceInLeft');
+    $('nav .nav_c').addClass('animated bounceInRight');
+   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".menu_logo").click(function(){
+    $(".right").css("width","88%");
+    $(".left").css("width","12%");
+    $(".left").css("display","block");
+    $(".menu_logo").css("display","none");
+   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".menu_logo_b").click(function(){
+    $(".right").css("width","100%");
+    $(".left").css("display","none");
+    $(".menu_logo").css("display","block");
+   });
+});
+</script>
+
+<script>
+
+<!----- Navegación Slide --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- Funcion click + scroll al #div--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+</script>
+
+  </head>
+  
+
+  <body>
+    <div class="loader"></div>
+
+    <div class="menu_logo"></div>
+
+    
+
+      <div class="left">
+      
+      <nav>
+
+        <div class="menu_logo_b"></div>
+
+        <ul>
+          <li class="act_ab ab_g"><a href="#aboutme">About Me</a></li>
+          <a href="#work"><li class="work_ab">Work</li></a>
+          <a href="#contact"><li class="cont_ab">Contact</li></a>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="right">
+
+    <section id="intro" data-type="background" data-speed="10">
+
+    <div class="container">
+
+      <div class="logo"></div>
+      <h1>Welcome to my place.</h1>
+      <h2>Go ahead, check out who I am and what I do.</h2>
+      <a class="arrow" href="#aboutme"></a>
+    </div>
+
+    </section>
+
+    <section id="aboutme" data-type="background" data-speed="10">
+
+      <div class="bg_info"> 
+        <div class="container">
+          
+      <div class="mephoto"></div>
+      <p class="myname">Marcos F.</p>
+      <p class="infome">Front End Developer - UI Designer</p>
+      
+    
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="wrap">
+      <div class="paragraph_ab">
+      <p>Probably people might not know what Front End Development is. It isn't very well known in Spain
+      <br>at the moment. <span>Front End Development</span>, is the part (of a webpage or web application) that users  
+      <br>see and interact with.</p>
+      </div>
+
+      <div class="paragraph_ab">
+      <p>With the help of a User Interface Design (or without it), I code the product using HTML5, CSS3,
+      <br>SASS, Javascript, jQuery, and frameworks such as Bootstrap or Foundation.
+      <br>I do not try, I <span>make</span> a better experience for the user, with an attractive and effective final result.
+      </div>
+
+      <div class="paragraph_ab">
+      <p>I have been several years touching HTML, CSS and Javascript, and I have a <span>Master Degree in Web
+      <br>Development and Design</span>. I also know Back End Development, which it's the functional part, where
+      <br>part of the magic happens. I play with PHP and MySQL (PHPMyadmin).</p>
+      </div>
+
+      <div class="paragraph_ab">
+      <p>I have had the chance to be an intern at <a href="http://www.idento.es" target="_blank">Idento</a> as a Junior Web Developer. <span>Idento</span> is a company
+      <br>which offers Digital Marketing & Web Development / Design services.</p>
+      </div>
+
+      <div class="paragraph_ab">
+      <p>I was born in Spain, but during the majority of my life I've lived abroad. I am also <span>half British</span>, which
+      <br>means that my mother tongue languages are Spanish and English, I also have a B2 Level Certificate 
+      <br>in French.</p>
+      </div>
+
+      <div class="paragraph_ab hide">
+      <p>Want to check out some work? :)</p>
+      </div>
+
+      <a class="arrow_g" href="#work"></a>
+    </div>
+
+
+
+
+    </div>
+    </section>
+
+
+    <section id="work" data-type="background" data-speed="10">
+      <!--<nav class="nav_w">
+        <ul>
+          <a href="#aboutme"><li>About Me</li></a>
+          <li class="act_ab">Work</li>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </nav>-->
+      <div class="container">
+
+      <ul class="proj">
+        <li class="size1 zubi"></li>
+        <li class="size2 agest"></li>
+      </ul>
+
+      <ul class="proj">
+        <li class="size2 rest"></li>
+        <li class="size1 qdep"></li>
+      </ul>
+
+      <ul class="proj">
+        <li class="size1 comun"></li>
+      </ul>
+
+      <a class="arrow_g" href="#contact"></a>
+    </div>
+
+    </section>
+
+
+
+    <section id="contact" data-type="background" data-speed="10">
+      <!--<nav class="nav_c">
+        <ul>
+          <a href="#aboutme"><li>About Me</li></a>
+          <a href="#work"><li>Work</li></a>
+          <li class="act_ab">Contact</li>
+        </ul>
+      </nav>-->
+      <div class="container">
+          <div class="contact_i">Hola</div>
+      <form>
+        <input type="text" placeholder="Name">
+        <br><input type="text" placeholder="E-mail">
+        <br><textarea placeholder="Message" class="input"></textarea>
+        <br><input type="submit" value="Send">
+      </div>
+    
+
+    </section>
+
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
